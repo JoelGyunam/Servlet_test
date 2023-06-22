@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2>연산 링크</h2>
+	<hr>
+
+
+	<form>
+		첫번째 숫자 : <input type="text" id="num1">
+		두번째 숫자 : <input type="text" id="num2">
+		<input type="submit" value = "계산하기" id = "submit">
+	</form>
+
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js" integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script>  
+		$(document).ready(function(){
+						
+			$("#submit").on("click", function(){
+				
+				var getnum1 = document.getElementById("num1").value;
+				var getnum2 = document.getElementById("num2").value;
+
+				location.href = "http://localhost:8080/servlet/test06?number1=" + getnum1 + "&number2=" + getnum2;
+				alert("계산 화면으로 이동합니다");
+				
+			});
+
+		});
+		
+		
+	</script>  
+
+
+</body>
+
+
+</html>
