@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.util.Arrays" %>
 
 <!DOCTYPE html>
 <html>
@@ -38,7 +39,7 @@ List<String> scoreList = Arrays.asList(new String[]{"X", "O", "O", "O", "X", "O"
 --%>
 
 <h3>2. 채점 결과</h3><hr>
-<%-- 
+
 <%
 List<String> scoreList = Arrays.asList(new String[]{"X", "O", "O", "O", "X", "O", "O", "O", "X", "O"});
 
@@ -52,7 +53,7 @@ for(int i = 0; i < scoreList.size(); i++){
 
 
 <div> <%= oxScore %></div>
---%>
+
 
 <h3>3. 1부터 n까지의 합계를 구하는 함수</h3><hr>
 <%-- 
