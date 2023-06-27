@@ -11,7 +11,7 @@
 	<div class = "container">
 		<h3>길이 변환</h3>
 		
-		<form method = "get" action = "/jsp/test/test05.jsp">
+		<form method = "post" action = "/jsp/test/test05.jsp">
 			<input name="cm"></input> <label>cm</label>
 		
 			<label>인치<input type="checkbox" name="inch" value="y"></label>
