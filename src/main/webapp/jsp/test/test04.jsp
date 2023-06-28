@@ -22,7 +22,7 @@ if(cal.equals("plus")){
 } else if(cal.equals("minus")){
 	result = (double)num1 - (double)num2;
 	calSymbol = "-";
-} else if(cal.equals("mutiple")){
+} else if(cal.equals("multiple")){
 	result = (double)num1 * (double)num2;
 	calSymbol = "X";
 } else if(cal.equals("devide")){

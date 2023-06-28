@@ -36,9 +36,9 @@
 		<div class="display-3 fw-bold">
 		<% for(int i = 0; i < inputArray.length; i++){
 			if("y".equals(inputArray[i][0])){
-				out.println("<div>");
-				out.println(inputArray[i][1]);
-				out.println("</div>");
+				out.print("<div>");
+				out.print(inputArray[i][1]);
+				out.print("</div>");
 				} else out.println(); ; 
 			} 
 			%>
