@@ -84,10 +84,10 @@ list.add(map);
 				<%
 				for(Map<String, Object> toList : list){
 					int id = (Integer)toList.get("id");
-					String title = (String)toList.get("title");
-					String author = (String)toList.get("author");
-					String publisher = (String)toList.get("publisher");
-					String img = (String)toList.get("image");
+					String title = ((String)toList.get("title")).replace(" ","&nbsp");
+					String author = ((String)toList.get("author")).replace(" ","&nbsp");
+					String publisher = ((String)toList.get("publisher")).replace(" ","&nbsp");
+					String img = ((String)toList.get("image")).replace(" ","&nbsp");
 					String goTo = "/jsp/test/test08.jsp?" + "title=" + title + "&author=" + author + "&publisher=" + publisher + "&img=" + img;
 				%>	
 						<tr>
