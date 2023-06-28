@@ -9,9 +9,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-
 <%
-
 List<Map<String, Object>> list = new ArrayList<>();
 Map<String, Object> map = new HashMap<String, Object>() {
     { 
@@ -56,22 +54,13 @@ map = new HashMap<String, Object>() {
     } 
 };
 list.add(map);
-
-
-
-
 %>
-
-
-
-
-
 <div>
 	<div>
 		<h3 class="text-center fw-bold">책 목록</h3>
 	</div>
 	<div>
-		<table class="table text-center">
+		<table class="table text-center align-middle">
 			<thead>
 				<tr>
 					<th>id</th>
@@ -80,7 +69,6 @@ list.add(map);
 				</tr>
 			</thead>
 			<tbody>
-				
 				<%
 				for(Map<String, Object> toList : list){
 					int id = (Integer)toList.get("id");
@@ -88,24 +76,19 @@ list.add(map);
 					String author = ((String)toList.get("author")).replace(" ","&nbsp;");
 					String publisher = ((String)toList.get("publisher")).replace(" ","&nbsp;");
 					String img = ((String)toList.get("image")).replace(" ","&nbsp;");
-					String goTo = "/jsp/test/test08.jsp?" + "title=" + title + "&author=" + author + "&publisher=" + publisher + "&img=" + img;
+					String goTo = "/jsp/test/test08.jsp?" + "id=" + id;
 				%>	
 						<tr>
 							<td><%=id%></td>
 							<td><img src="<%=img%>" alt="<%=title%>" width="100px" ></td>
-							<td class="display-3 text-primary"><a href = <%=goTo%>><%=title%></a></td>
+							<td class="display-3 text-primary"><a class = "text-decoration-none" href = <%=goTo%>><%=title%></a></td>
 						</tr>
 				<%	
 				};
 				%>		
 			</tbody>
-		
-		
 		</table>
-	
 	</div>
-
 </div>
-
 </body>
 </html>

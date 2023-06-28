@@ -79,7 +79,7 @@
 							String menuValue = (String)toLine.get("menu");
 							String nameValue = (String)toLine.get("name");
 							double pointValue = (Double)toLine.get("point");
-				%>
+				%> 
 					<tr>
 						<td><%=menuValue %></td>
 						<td><%=nameValue %></td>

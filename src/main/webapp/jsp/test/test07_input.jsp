@@ -15,7 +15,7 @@
 		<div>
 			<form method = "get" action = "/jsp/test/test07.jsp">
 				<div>
-					<input type = "text" name = "menu">
+					<input type = "text" name = "menu" class="form-control col-4">
 					<label> <input type = "checkbox" name = "point" value="4"> 4점 이하 제외</label> <br>
 					<button type="submit" class="btn btn-primary mt-1">제출</button>
 				</div>
