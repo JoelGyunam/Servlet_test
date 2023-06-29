@@ -57,31 +57,20 @@
 						</tr>
 					</thead>
 					<tbody>		
-		<% 
-		if("전체".equals(cat)){
-			for(Map<String,String> toLine : list){
-		%>
+
+<%	for (Map<String, String> toLine : list){
+		if(cat.equals("전체")||cat.equals(toLine.get("category"))){
+	
+%>
 						<tr>
 							<td><%=toLine.get("ch")%></td>
 							<td><%=toLine.get("name")%></td>
 							<td><%=toLine.get("category")%></td>
 						</tr>
-		<% 
-			}
-		} else	
-				for(Map<String,String> toLine : list){
-					if(!cat.equals(toLine.get("category")))	{
-						continue;					
-					}
-		%>
-						<tr>
-							<td><%=toLine.get("ch")%></td>
-							<td><%=toLine.get("name")%></td>
-							<td><%=toLine.get("category")%></td>
-						</tr>
-		<%
-				} 
-		%>
+<%
+		}
+	}
+%>
 					</tbody>
 				</table>
 			</div>
