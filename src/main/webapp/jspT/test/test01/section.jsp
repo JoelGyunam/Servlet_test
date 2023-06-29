@@ -45,6 +45,8 @@
     if(request.getParameter("cat") == null){
     	cat = "전체";
     }else cat = request.getParameter("cat");
+    
+    // String cat = request.getParameter("cat");
 %>
 		<section>
 			<div class="main-content">
