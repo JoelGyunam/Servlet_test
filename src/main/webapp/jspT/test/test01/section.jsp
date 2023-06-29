@@ -51,9 +51,9 @@
 				<table class="table text-center">
 					<thead>
 						<tr>
-							<th>채널</th>
-							<th>채널명</th>
-							<th>카테고리</th>
+							<th class = "w-25">채널</th>
+							<th class = "w-25">채널명</th>
+							<th class = "w-25">카테고리</th>
 						</tr>
 					</thead>
 					<tbody>		

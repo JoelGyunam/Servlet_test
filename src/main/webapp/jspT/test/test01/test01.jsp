@@ -10,7 +10,6 @@
 </head>
 <body>
 
-String 
 
 	<div id="wrap">
 		<jsp:include page="header.jsp" />

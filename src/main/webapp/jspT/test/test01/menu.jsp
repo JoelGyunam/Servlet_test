@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-		<nav class="main-menu bg-danger d-flex align-items-center justify-content-around">
+		<nav class="main-menu bg-danger p-1">
 			<ul class="nav justify-content-around fw-bold">
 			 	<li class="nav-item"><a href="?cat=전체" class="nav-link text-white">전체</a></li>
 			 	<li class="nav-item"><a href="?cat=지상파" class="nav-link text-white">지상파</a></li>
