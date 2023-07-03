@@ -46,13 +46,13 @@ public class Test01Controller extends HttpServlet{
 				String address = resultSet.getString("address");
 				int area = resultSet.getInt("area");
 				String type = resultSet.getString("type");
-				out.println("매물 주소 : " + address + "면적 : " + area + "타입 : " + type);
+				out.println("매물 주소 : " + address + " 면적 : " + area + " 타입 : " + type);
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		mysqlService.disconnect();		
 	}
 	
 }
