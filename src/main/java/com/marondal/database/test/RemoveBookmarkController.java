@@ -26,9 +26,9 @@ public class RemoveBookmarkController extends HttpServlet{
 		
 		mysqlService.update(removeBookmarkQry);
 		
+		// mysqlService.disconnect();
 		response.sendRedirect("/database/test/test02/BookmarkList.jsp");
 		
-		// mysqlService.disconnect();
 
 	}
 	

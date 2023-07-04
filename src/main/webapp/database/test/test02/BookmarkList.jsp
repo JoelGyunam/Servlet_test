@@ -20,33 +20,36 @@
 	ResultSet resultSet = mysqlService.select(query);
 
 %>
-
-
-	<table class = "table text-center" border = "1">
-		<thead>
-			<tr>
-				<th>사이트</th>
-				<th>사이트주소</th>
-			</tr>
-		</thead>
-		<tbody>
-<%		while(resultSet.next()){
-	%>
-			<tr>
-				<td><%=resultSet.getString("name")%></td>
-				<td><a href = "<%=resultSet.getString("url")%>"><%=resultSet.getString("url")%></a></td>
-				<td><a href = "/db/bookmarks/remove?id=<%=resultSet.getString("id")%>" class = "text-red">삭제하기</a></td>
-			</tr>
-<%
-		}
-%>
-
-		</tbody>
-
-	</table>
 	
-	<div class = "d-flex justify-content-center">
-		<button class = "btn btn-warning"> <a href = "/database/test/test02/AddBookmark.jsp"> 추가하기</a></button>
+	<div class = "container">
+		<h1 class = "text-center m-3">즐겨찾기 목록</h1>
+	
+		<table class = "table text-center table-bordered">
+			<thead>
+				<tr>
+					<th>사이트</th>
+					<th>사이트주소</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+	<%		while(resultSet.next()){
+		%>
+				<tr>
+					<td><%=resultSet.getString("name")%></td>
+					<td><a target = "_blank" href = "<%=resultSet.getString("url")%>"><%=resultSet.getString("url")%></a></td>
+					<td><a href = "/db/bookmarks/remove?id=<%=resultSet.getString("id")%>" class = "text-decoration-none text-danger"><button class="form-control btn-sm">삭제하기</button></a></td>
+				</tr>
+	<%
+			}
+	%>
+			</tbody>
+	
+		</table>
+		
+		<div class = "d-flex justify-content-center">
+			<a href = "/database/test/test02/AddBookmark.jsp" class = "text-decoration-none text-white fw-bold col-12"><button class = "btn btn-primary mt-3 col-12">  추가하기</button></a>
+		</div>
 	</div>
 </body>
 </html>

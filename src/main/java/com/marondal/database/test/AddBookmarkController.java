@@ -34,6 +34,4 @@ public class AddBookmarkController extends HttpServlet{
 		// mysqlService.disconnect();
 		
 	}
-	
-	
 }
