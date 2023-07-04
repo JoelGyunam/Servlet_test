@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+#wrap {
+	width : 1000px;
+	
+	margin:auto;
+}
+
+header {
+	height : 100px;
+	width : 1000px;
+}
+
+.bg-sig-col {
+	background-color : #FF7F50;
+}
+
+.text-sig-col {
+	color : #FF7F50;
+}
+	
+#menu {
+	height : 40px;
+	width : 1000px;
+}
+
+section {
+	width:1000px;
+}
+
+.item-placement {
+	width:980px;
+}
+
+.item-box{
+	height : 270px;
+	width : 300px;
+	border : solid;
+	border-color:  #FF7F50;
+}
+
+footer {
+	height:50px;
+}
